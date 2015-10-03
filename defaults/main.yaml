@@ -1,7 +1,7 @@
 ---
 # tasks/config.yaml
 zuul_config_gearman_port: 4730
-zuul_config_gearman_server: localhost
+zuul_config_gearman_server: "{{ groups.gearmand[0] }}"
 
 zuul_config_gearman_server_start: true
 zuul_config_gearman_server_listen_address: 0.0.0.0
